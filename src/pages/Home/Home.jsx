@@ -1,6 +1,6 @@
 import ShopByCategory from '../../components/Home/CategoriesSection/Categories'
 import HeroSection from '../../components/Home/HeroSection';
-import { ProductSection } from '../../components/Home/Products/ProductSection';
+import { ProductSection } from '../../components/Products/ProductSection';
 
 function Home() {
   return (

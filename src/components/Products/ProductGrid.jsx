@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
 import CartDrawer from "./CartDrawer";
 import { ProductCard } from "./ProductCard";
 
@@ -21,23 +20,13 @@ function ProductGrid({ products }) {
             </div>
 
             {/*drower */}
-            <AnimatePresence>
-                {isCartOpen && (
-                    <CartDrawer
-                        isOpen={isCartOpen}
-                        item={activeCartItem}
-                        onClose={() => setIsCartOpen(false)}
-                    />
-                )}
-            </AnimatePresence>
-
-            <style jsx>{`
-                @keyframes bounce-slow {
-                    0%, 100% { transform: translateY(0); }
-                    50% { transform: translateY(-8px); }
-                }
-                .animate-bounce-slow { animation: bounce-slow 3s infinite ease-in-out; }
-            `}</style>
+            {isCartOpen && (
+                <CartDrawer
+                    isOpen={isCartOpen}
+                    item={activeCartItem}
+                    onClose={() => setIsCartOpen(false)}
+                />
+            )}
         </div>
     )
 }
