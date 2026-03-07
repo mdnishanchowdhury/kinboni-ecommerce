@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BiCategory } from "react-icons/bi";
 import ProductGrid from "./ProductGrid";
-import { products } from "../../data/products";
+import { products } from "../../../data/products";
 
 export function ProductSection() {
     const containerVariants = {
@@ -57,7 +57,7 @@ export function ProductSection() {
                 </motion.div>
             </div>
 
-            {/* Product Grid with Motion */}
+            {/* Product Grid */}
             <ProductGrid products={products} />
         </motion.div>
     );

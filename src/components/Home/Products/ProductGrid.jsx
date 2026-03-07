@@ -9,7 +9,7 @@ function ProductGrid({ products }) {
     return (
         <div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-12">
-                {products.map((product) => (
+                {products?.data?.map((product) => (
                     <ProductCard
                         key={product.id}
                         productData={product}

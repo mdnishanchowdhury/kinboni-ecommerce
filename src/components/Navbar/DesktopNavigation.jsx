@@ -41,7 +41,7 @@ export default function DesktopNavigation({ navLinks, categoriesData, isSellerMo
                             </div>
                         ) : (
                             <div className="flex items-center gap-6 font-bold text-sm text-gray-600">
-                                <span className="cursor-pointer hover:text-[#088178] transition-colors">Sell on OURA</span>
+                                <span className="cursor-pointer hover:text-[#088178] transition-colors">Sell on KINBONi</span>
                                 <span className="cursor-pointer hover:text-[#088178] border-l pl-6 border-gray-200 transition-colors">Help Center</span>
                             </div>
                         )

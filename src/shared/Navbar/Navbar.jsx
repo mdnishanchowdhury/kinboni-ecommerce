@@ -56,7 +56,7 @@ function Navbar() {
                     {/* Logo & Mobile Menu Toggle */}
                     <div className="flex items-center gap-3">
                         <HiOutlineMenu onClick={() => setOpen(true)} className="text-2xl lg:hidden cursor-pointer text-gray-700" />
-                        <img className="h-6 lg:h-11 object-contain" src={logo} alt="OURA" />
+                        <img className="h-6 lg:h-11 object-contain" src={logo} alt="KINBONI" />
                     </div>
 
                     {/* Desktop Search Bar */}
