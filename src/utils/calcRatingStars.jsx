@@ -1,4 +1,3 @@
-// Converts average rating to array for full/half/empty stars
 export const getStarsArray = (avgRating, maxStars = 5) => {
   const stars = [];
   for (let i = 1; i <= maxStars; i++) {
