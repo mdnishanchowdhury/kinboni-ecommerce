@@ -91,7 +91,7 @@ export default function ShopByCategorySlider() {
                             {/* Card Image Box */}
                             <div className="w-full aspect-square bg-white border border-slate-200 rounded-[24px] flex items-center justify-center p-4 transition-all duration-300 group-hover:shadow-lg group-hover:border-slate-300 pointer-events-none overflow-hidden">
                                 <img
-                                    src={item.icon}
+                                    src={item.image}
                                     alt={item.name}
                                     className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-105"
                                 />

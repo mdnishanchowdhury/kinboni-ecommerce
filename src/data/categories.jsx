@@ -1,124 +1,97 @@
 export const categoriesData = [
     {
-        name: "Women's & Girls' Fashion",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
+        name: "Women's Fashion",
+        icon: "https://i.ibb.co.com/RTcPFNvs/saree.png",
         subCategories: [
             {
-                name: "Bags",
+                name: "Ethnic Wear",
                 items: [
-                    { name: "Wallets", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Crossbody Bags", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Backpacks", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Saree", image: "https://i.ibb.co.com/RTcPFNvs/saree.png" },
+                    { name: "Salwar Kameez", image: "https://i.ibb.co.com/HDrncJFW/image-removebg-preview-4.png" },
+                    { name: "Three Piece", image: "https://i.ibb.co.com/vx7m84w9/image-removebg-preview-5.png" }
                 ]
             },
             {
-                name: "Clothing",
+                name: "Western Wear",
                 items: [
-                    { name: "Dresses", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Kurtas", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Tops", image: "https://i.ibb.co.com/9m38mxhJ/crop-top-transparent-image-free-png.png" },
+                    { name: "Dresses", image: "https://i.ibb.co.com/0RX6X82f/Dresses.png" },
+                    { name: "Jeans", image: "https://i.ibb.co.com/1fcYJpYj/Jeans-for-woman.png" }
+                ]
+            }
+        ]
+    },
+
+    {
+        name: "Men's Fashion",
+        icon: "men.jpg",
+        subCategories: [
+            {
+                name: "Traditional Wear",
+                items: [
+                    { name: "Panjabi", image: "https://i.ibb.co.com/nGXWz4v/Panjabi.png" },
+                    { name: "Pajama", image: "https://i.ibb.co.com/1fVkVf0z/pajama.png" }
+                ]
+            },
+            {
+                name: "Casual Wear",
+                items: [
+                    { name: "T-Shirts", image: "https://i.ibb.co.com/mCgx37GW/T-Shirts.png" },
+                    { name: "Shirts", image: "https://i.ibb.co.com/VWGvS7tT/Shirts.png" },
+                    { name: "Jeans", image: "https://i.ibb.co.com/gFjnGHjh/Jeans.png" }
                 ]
             }
         ]
     },
     {
-        name: "Men's & Boys' Fashion",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
+        name: "Accessories",
+        icon: "accessories.jpg",
         subCategories: [
             {
-                name: "Clothing",
+                name: "Fashion Add-ons",
                 items: [
-                    { name: "T-Shirts", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Jeans", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Panjabi", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            },
-            {
-                name: "Shoes",
-                items: [
-                    { name: "Sneakers", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Formal Shoes", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Bags", image: "https://i.ibb.co.com/wN75MXTK/Bags.png" },
+                    { name: "Belts", image: "https://i.ibb.co.com/1GCyNcbp/Belts.png" },
+                    { name: "Sunglasses", image: "https://i.ibb.co.com/yBWjn4PX/Sunglasses.png" },
+                    { name: "Footwear", image: "https://i.ibb.co.com/Y7sJ5n21/Footwear.png" },
+                    { name: "Watches", image: "https://i.ibb.co.com/zHXdtG8N/Watches.png" }
                 ]
             }
         ]
     },
     {
-        name: "Electronic Accessories",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
+        name: "Jewelry",
+        icon: "jewelry.jpg",
         subCategories: [
             {
-                name: "Mobile Accessories",
+                name: "Fine Jewelry",
                 items: [
-                    { name: "Power Banks", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Cases & Covers", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Chargers", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            },
-            {
-                name: "Audio",
-                items: [
-                    { name: "Headphones", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Bluetooth Speakers", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Necklaces", image: "necklace.jpg" },
+                    { name: "Rings", image: "ring.jpg" },
+                    { name: "Bracelets", image: "bracelet.jpg" },
+                    { name: "Earrings", image: "earring.jpg" }
                 ]
             }
         ]
     },
     {
-        name: "TV & Home Appliances",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
+        name: "Grooming & Beauty",
+        icon: "grooming.jpg",
         subCategories: [
             {
-                name: "Large Appliances",
+                name: "Makeup",
                 items: [
-                    { name: "Refrigerators", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Washing Machines", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Lipstick & Lipcare", image: "lipstick.jpg" },
+                    { name: "Face Makeup", image: "face-makeup.jpg" },
+                    { name: "Eye Makeup", image: "eye-makeup.jpg" }
                 ]
             },
             {
-                name: "Kitchen Appliances",
+                name: "Skincare & Hair",
                 items: [
-                    { name: "Blenders", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Microwaves", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            }
-        ]
-    },
-    {
-        name: "Mother & Baby",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
-        subCategories: [
-            {
-                name: "Baby Care",
-                items: [
-                    { name: "Diapers", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Baby Wipes", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            },
-            {
-                name: "Baby Toys",
-                items: [
-                    { name: "Remote Control Cars", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Learning Toys", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            }
-        ]
-    },
-    {
-        name: "Groceries",
-        icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg",
-        subCategories: [
-            {
-                name: "Cooking Essentials",
-                items: [
-                    { name: "Oil", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Rice", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Spices", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
-                ]
-            },
-            {
-                name: "Beverages",
-                items: [
-                    { name: "Tea", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" },
-                    { name: "Soft Drinks", icon: "https://i.ibb.co.com/QF0hBxSH/61-WSj-Gg-Fz-L-SY500.jpg" }
+                    { name: "Moisturizers", image: "cream.jpg" },
+                    { name: "Hair Styling", image: "hair-style.jpg" },
+                    { name: "Perfumes", image: "perfume.jpg" }
                 ]
             }
         ]

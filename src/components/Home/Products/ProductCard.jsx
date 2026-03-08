@@ -21,7 +21,7 @@ export function ProductCard({ productData, setIsCartOpen, setActiveCartItem }) {
     };
 
     const starsArray = useMemo(() => getStarsArray(productData.ratings.average), [productData.ratings.average]);
-    const stockPercent = useMemo(() => getStockPercent(productData.inventory.available, productData.inventory.total), [productData.inventory]);
+    const stockPercent = useMemo(() => getStockPercent(productData.inventory.stock, productData.inventory.sold), [productData.inventory]);
 
     return (
         <motion.div
@@ -117,7 +117,7 @@ export function ProductCard({ productData, setIsCartOpen, setActiveCartItem }) {
                     <div className="flex flex-col items-end min-w-[60px] lg:min-w-[80px] lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-300">
                         <div className="mb-1 flex justify-between w-full text-[9px] font-bold lg:group-hover:text-white transition-colors">
                             <span>Stock</span>
-                            <span className="ml-1">{productData.inventory.available}</span>
+                            <span className="ml-1">{productData.inventory.stock}</span>
                         </div>
                         <div className="h-1.5 w-full rounded-full bg-gray-100 lg:bg-gray-600/50 overflow-hidden">
                             <motion.div

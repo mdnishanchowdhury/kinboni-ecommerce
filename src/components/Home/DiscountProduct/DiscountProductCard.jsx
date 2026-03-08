@@ -20,13 +20,13 @@ const DiscountProductCard = ({ product }) => {
 
   const handleOrder = (e) => {
     e.stopPropagation();
-    if (product.inventory.available > 0) {
+    if (product.inventory.stock > 0) {
       alert(`${product.name} ordered! Price: $${product.pricing.currentPrice}`);
     }
   };
 
-  const isOutOfStock = product.inventory.available === 0;
-  const stockPercent = getStockPercent(product.inventory.available, product.inventory.total);
+  const isOutOfStock = product.inventory.stock === 0;
+  const stockPercent = getStockPercent(product.inventory.stock, product.inventory.sold);
   const starsArray = useMemo(() => getStarsArray(product.ratings.average), [product.ratings.average]);
 
   return (
@@ -125,7 +125,7 @@ const DiscountProductCard = ({ product }) => {
           {/* Inventory Progress */}
           <div className="space-y-1">
             <div className="flex justify-between text-[9px] font-bold text-slate-500 uppercase tracking-tight">
-              <span>{isOutOfStock ? "Out of Stock" : `Stock Left: ${product.inventory.available}`}</span>
+              <span>{isOutOfStock ? "Out of Stock" : `Stock Left: ${product.inventory.stock}`}</span>
               <span>{stockPercent}%</span>
             </div>
             <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
