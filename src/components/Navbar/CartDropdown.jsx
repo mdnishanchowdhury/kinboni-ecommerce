@@ -1,5 +1,4 @@
 import { FiSearch, FiShoppingCart, FiUser, FiHeart } from "react-icons/fi";
-import { HiArrowRight, HiOutlineSwitchHorizontal } from "react-icons/hi";
 
 export default function CartDropdown({ isSellerMode, activeDropdown, toggleDropdown }) {
     return (
@@ -9,7 +8,7 @@ export default function CartDropdown({ isSellerMode, activeDropdown, toggleDropd
                     <div className="relative">
                         <div onClick={(e) => toggleDropdown(e, 'cart')} className="relative cursor-pointer hover:text-green-600 text-gray-700">
                             <FiShoppingCart className="text-2xl" />
-                            <span className="absolute -top-2 -right-2 bg-green-600 text-white text-[10px] px-1.5 rounded-full font-bold border-2 border-white">0</span>
+                            <span className="absolute -top-2 -right-2 bg-green-500 text-white text-[10px] px-1.5 rounded-full font-bold border-2 border-white">0</span>
                         </div>
                         {
                             activeDropdown === 'cart' && (

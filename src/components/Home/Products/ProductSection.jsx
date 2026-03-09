@@ -17,7 +17,7 @@ export function ProductSection() {
         <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
             variants={containerVariants}
             className="min-h-screen lg:py-10 px-4 lg:px-0"
         >

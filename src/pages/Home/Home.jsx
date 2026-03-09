@@ -2,6 +2,7 @@ import ShopByCategory from '../../components/Home/CategoriesSection/Categories'
 import DiscountProducts from '../../components/Home/DiscountProduct/DiscountProducts';
 import FashionBanners from '../../components/Home/FashionBanners/FashionBanners';
 import HeroSection from '../../components/Home/HeroSection';
+import HomeFeatures from '../../components/Home/HomeFeatures/HomeFeatures';
 import { ProductSection } from '../../components/Home/Products/ProductSection';
 import TopSellingSection from '../../components/Home/TopSellingSection/TopSellingSection';
 
@@ -13,11 +14,8 @@ function Home() {
       <ProductSection />
       <DiscountProducts />
       <TopSellingSection />
-
-      <div className='pb-10'>
-        <FashionBanners />
-      </div>
-
+      <FashionBanners />
+      <HomeFeatures />
     </div>
   )
 }

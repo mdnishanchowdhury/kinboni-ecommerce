@@ -67,7 +67,7 @@ function Navbar() {
                         {/* Mode Switcher Button */}
                         <button
                             onClick={() => setIsSellerMode(!isSellerMode)}
-                            className={`hidden md:flex items-center gap-2 px-4 py-[9px] rounded-full border-2 transition-all font-bold text-xs ${isSellerMode ? 'bg-green-600  text-white' : 'bg-white border-gray-200 text-gray-600 hover:border-green-600'}`}
+                            className={`hidden md:flex items-center gap-2 px-4 py-[9px] rounded-full border-2 transition-all font-bold text-xs ${isSellerMode ? 'bg-green-500  text-white' : 'bg-white border-gray-200 text-gray-600 hover:border-green-600'}`}
                         >
                             <HiOutlineSwitchHorizontal className="text-lg" />
                             {isSellerMode ? 'Switch to Buying' : 'Switch to Selling'}

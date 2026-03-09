@@ -23,7 +23,7 @@ export default function AccountDropdown({ activeDropdown, toggleDropdown }) {
                             <a href="#" className="flex items-center gap-3 px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 font-bold transition-colors"><FiHeart className="text-gray-400" /> Favorites</a>
                             <div className="flex items-center justify-between px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-50 font-bold cursor-pointer border-t border-gray-50 mt-1">
                                 <span className="flex items-center gap-3"><HiOutlineGlobeAlt className="text-gray-400" /> Language</span>
-                                <span className="text-[10px] bg-green-600/10 px-2 py-0.5 rounded text-[#088178]">EN-BDT</span>
+                                <span className="text-[10px] bg-green-500/10 px-2 py-0.5 rounded text-[#088178]">EN-BDT</span>
                             </div>
                         </div>
                         <div className="px-5 pt-2 border-t border-gray-50">

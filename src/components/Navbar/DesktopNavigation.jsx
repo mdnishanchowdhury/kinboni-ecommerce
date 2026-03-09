@@ -9,7 +9,7 @@ export default function DesktopNavigation({ navLinks, categoriesData, isSellerMo
 
                 <div className="flex items-center gap-8">
                     <div className="relative group">
-                        <button className="bg-green-600 text-white px-8 py-[7px] font-bold flex items-center gap-3 rounded-full hover:bg-black transition-all">
+                        <button className="bg-green-500 text-white px-8 py-[7px] font-bold flex items-center gap-3 rounded-full hover:bg-black transition-all">
                             <MdOutlineCategory className="text-xl" /> Explore Categories <MdKeyboardArrowDown className="text-xl group-hover:rotate-180 transition-transform duration-300" />
                         </button>
 
@@ -22,7 +22,7 @@ export default function DesktopNavigation({ navLinks, categoriesData, isSellerMo
                     <nav className="flex gap-2 font-bold text-gray-700">
                         {
                             navLinks.map(link => (
-                                <NavLink key={link.name} to={link.path} className={({ isActive }) => `px-4 py-[7px] transition-all rounded-md ${isActive ? 'bg-green-600 text-white' : 'hover:text-green-600'}`}>{link.name}</NavLink>
+                                <NavLink key={link.name} to={link.path} className={({ isActive }) => `px-4 py-[7px] transition-all rounded-md ${isActive ? 'bg-green-500 text-white' : 'hover:text-green-600'}`}>{link.name}</NavLink>
                             ))
                         }
                     </nav>
@@ -35,7 +35,7 @@ export default function DesktopNavigation({ navLinks, categoriesData, isSellerMo
                                 <button className="flex items-center gap-2 bg-gray-100 text-gray-700 px-5 py-[7px] rounded-full font-bold text-sm hover:bg-gray-200 transition-all shadow-sm">
                                     <MdOutlineDashboard className="text-xl" /> Dashboard
                                 </button>
-                                <button className="flex items-center gap-2 bg-green-600 text-white px-5 py-[7px] rounded-full font-bold text-sm hover:bg-black transition-all shadow-md">
+                                <button className="flex items-center gap-2 bg-green-500 text-white px-5 py-[7px] rounded-full font-bold text-sm hover:bg-black transition-all shadow-md">
                                     <MdOutlineAddBox className="text-xl" /> Add Product
                                 </button>
                             </div>

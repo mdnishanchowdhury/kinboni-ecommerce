@@ -18,7 +18,7 @@ export default function MobileDrawer({ open, setOpen, logo, isSellerMode, setIsS
                 <div className="p-5">
 
                     {/* Mobile Mode Switcher */}
-                    <div className="mb-6 bg-green-600/5 p-4 rounded-2xl flex items-center justify-between border border-green-600/10">
+                    <div className="mb-6 bg-green-500/5 p-4 rounded-2xl flex items-center justify-between border border-green-500/10">
                         <span className="text-sm font-bold text-gray-800">{isSellerMode ? 'Seller Mode' : 'Buyer Mode'}</span>
                         <button onClick={() => setIsSellerMode(!isSellerMode)} className={`w-12 h-6 rounded-full relative transition-all ${isSellerMode ? 'bg-green-500' : 'bg-gray-300'}`}>
                             <div className={`absolute top-1 w-4 h-4 bg-white rounded-full transition-all ${isSellerMode ? 'left-7' : 'left-1'}`} />

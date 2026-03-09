@@ -10,10 +10,10 @@ export default function MessageDropdown({ activeDropdown, toggleDropdown }) {
                         <div className="absolute -top-2 right-[75px] lg:right-4 w-4 h-4 bg-white rotate-45 border-t border-l border-gray-100"></div>
                         <h3 className="text-sm font-bold text-gray-800 text-left mb-6">Messages</h3>
                         <div className="w-20 h-16 bg-orange-50 mx-auto rounded-xl flex items-center justify-center mb-4">
-                            <HiOutlineChatAlt2 className="text-3xl text-green-600" />
+                            <HiOutlineChatAlt2 className="text-3xl text-green-500" />
                         </div>
                         <p className="text-gray-500 text-[11px] mb-6 font-bold">No new messages yet</p>
-                        <button className="w-full bg-green-600 text-white font-bold py-3 rounded-full hover:bg-gray-800 transition-all text-xs tracking-wider">VIEW MORE</button>
+                        <button className="w-full bg-green-500 text-white font-bold py-3 rounded-full hover:bg-gray-800 transition-all text-xs tracking-wider">VIEW MORE</button>
                     </div>
                 )
             }

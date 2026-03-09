@@ -24,11 +24,7 @@ export function ProductCard({ productData, setIsCartOpen, setActiveCartItem }) {
     const stockPercent = useMemo(() => getStockPercent(productData.inventory.stock, productData.inventory.sold), [productData.inventory]);
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            whileHover={{ y: typeof window !== 'undefined' && window.innerWidth > 1024 ? -12 : 0 }}
-            whileTap={{ scale: 0.98 }}
+        <div
             className="group relative w-full max-w-[340px] rounded-[24px] lg:rounded-[32px] bg-white p-4 lg:p-7 border border-slate-100 hover:bg-gradient-to-b hover:from-[#9c9c9c] hover:to-[#2d2d2d] transition-colors duration-700 shadow-sm"
         >
             {/* Flash Sale Badge */}
@@ -134,13 +130,13 @@ export function ProductCard({ productData, setIsCartOpen, setActiveCartItem }) {
                     <button
                         onClick={handleAddToCart}
                         disabled={isLoading}
-                        className="flex-[2] relative flex items-center justify-center rounded-full bg-black py-2.5 lg:py-3.5 text-[10px] lg:text-sm font-bold text-white lg:group-hover:bg-green-600 lg:group-hover:text-white disabled:opacity-70 transition-all"
+                        className="flex-[2] relative flex items-center justify-center rounded-full bg-green-500 py-2.5 lg:py-3.5 text-[10px] lg:text-sm font-bold text-white lg:group-hover:bg-white lg:group-hover:text-black disabled:opacity-70 transition-all"
                     >
                         {isLoading ? <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" /> : "Add to Cart"}
                     </button>
                     <button className="flex-1 rounded-full border border-gray-200 py-2.5 lg:py-3.5 text-[10px] lg:text-sm font-bold lg:group-hover:border-white/30 lg:group-hover:bg-white/10 lg:group-hover:text-white transition-all">View</button>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }

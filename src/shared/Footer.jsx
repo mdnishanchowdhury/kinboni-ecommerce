@@ -20,7 +20,7 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-2 mb-8">
                             {[FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube].map((Icon, idx) => (
-                                <a key={idx} href="#" className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#00A762] hover:bg-[#00A762] hover:text-white transition-all shadow-sm">
+                                <a key={idx} href="#" className="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-green-500 hover:bg-green-600 hover:text-white transition-all shadow-sm">
                                     <Icon size={16} />
                                 </a>
                             ))}
@@ -38,8 +38,8 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-8 text-gray-900">About</h3>
                         <ul className="space-y-4 text-sm text-gray-600">
                             {["About Us", "Terms & Conditions", "Careers", "Latest News", "Contact Us", "Privacy Policy"].map((item) => (
-                                <li key={item} className="flex items-center gap-2 hover:text-[#00A762] cursor-pointer group transition-all">
-                                    <ChevronRight size={14} className="text-[#00A762]" />
+                                <li key={item} className="flex items-center gap-2 hover:text-green-600 cursor-pointer group transition-all">
+                                    <ChevronRight size={14} className="text-green-500" />
                                     {item}
                                 </li>
                             ))}
@@ -50,8 +50,8 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-8 text-gray-900">My Account</h3>
                         <ul className="space-y-4 text-sm text-gray-600">
                             {["Your Account", "Return Policies", "Become a Vendor", "Wishlist", "Affiliate Program", "FAQs"].map((item) => (
-                                <li key={item} className="flex items-center gap-2 hover:text-[#00A762] cursor-pointer group transition-all">
-                                    <ChevronRight size={14} className="text-[#00A762]" />
+                                <li key={item} className="flex items-center gap-2 hover:text-green-600 cursor-pointer group transition-all">
+                                    <ChevronRight size={14} className="text-green-500" />
                                     {item}
                                 </li>
                             ))}
@@ -62,8 +62,8 @@ const Footer = () => {
                         <h3 className="text-lg font-bold mb-8 text-gray-900">Categories</h3>
                         <ul className="space-y-4 text-sm text-gray-600">
                             {["Healthcare", "Fashion", "Organic", "Beauty", "Groceries", "Fahion"].map((item) => (
-                                <li key={item} className="flex items-center gap-2 hover:text-[#00A762] cursor-pointer group transition-all">
-                                    <ChevronRight size={14} className="text-[#00A762]" />
+                                <li key={item} className="flex items-center gap-2 hover:text-greem-600 cursor-pointer group transition-all">
+                                    <ChevronRight size={14} className="text-green-500" />
                                     {item}
                                 </li>
                             ))}
@@ -76,19 +76,19 @@ const Footer = () => {
                         <ul className="space-y-5 text-sm text-gray-600">
                             <li className="flex gap-4 items-center">
                                 <div className="w-10 h-10 rounded-full bg-[#E6F6EF] flex items-center justify-center shrink-0 border border-[#CCE9DD]">
-                                    <MapPin size={18} className="text-[#00A762]" />
+                                    <MapPin size={18} className="text-green-500" />
                                 </div>
                                 <span>2715 Ash Dr. San Jose, South Dakota 83475</span>
                             </li>
                             <li className="flex gap-4 items-center">
                                 <div className="w-10 h-10 rounded-full bg-[#E6F6EF] flex items-center justify-center shrink-0 border border-[#CCE9DD]">
-                                    <Phone size={18} className="text-[#00A762]" />
+                                    <Phone size={18} className="text-green-500" />
                                 </div>
                                 <span>Call Us: (239) 555-0108</span>
                             </li>
                             <li className="flex gap-4 items-center">
                                 <div className="w-10 h-10 rounded-full bg-[#E6F6EF] flex items-center justify-center shrink-0 border border-[#CCE9DD]">
-                                    <Mail size={18} className="text-[#00A762]" />
+                                    <Mail size={18} className="text-green-500" />
                                 </div>
                                 <span>sara.cruz@example.com</span>
                             </li>
@@ -111,7 +111,7 @@ const Footer = () => {
             <div className="flex justify-end">
                 <button
                     onClick={scrollToTop}
-                    className="w-12 h-12 bg-[#00A762] rounded-full flex items-center justify-center shadow-lg hover:bg-black transition-all duration-300 group"
+                    className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-black transition-all duration-300 group"
                 >
                     <ArrowUp size={20} className="text-white group-hover:-translate-y-1 transition-transform" />
                 </button>

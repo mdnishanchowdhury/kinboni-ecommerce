@@ -115,7 +115,7 @@ const DiscountProductCard = ({ product }) => {
               disabled={isOutOfStock || isExpired}
               className={`p-2 rounded-xl transition-all shadow-lg active:scale-90 ${isOutOfStock || isExpired
                 ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                : 'bg-black text-white hover:bg-[#007b70]'
+                : 'bg-green-500 text-white hover:bg-black'
                 }`}
             >
               <ShoppingCart size={16} />
