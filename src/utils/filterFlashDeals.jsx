@@ -6,7 +6,7 @@ export const filterFlashDeals = (products) => {
 
         return (
             item.timer?.isFlashSale &&
-            item.pricing?.discountPercent >= 10 &&
+            item.pricing?.discountPercent >= 20 &&
             expireDate > now
         );
     });

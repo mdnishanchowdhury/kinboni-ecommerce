@@ -2,9 +2,18 @@ import { motion } from "framer-motion";
 import { products } from "../../../data/products";
 import { filterFlashDeals } from "../../../utils/filterFlashDeals";
 import DiscountProductCard from "./DiscountProductCard";
+import BigDiscountBanner from "./BigDiscountBanner";
+import { useMemo } from "react";
 
 export default function DiscountProducts() {
   const hotDeals = filterFlashDeals(products.data);
+
+  const maxDiscount = useMemo(() => {
+    if (hotDeals.length === 0) return "10";
+
+    const discounts = hotDeals.map(p => p.pricing.discountPercent || 0);
+    return Math.max(...discounts).toString();
+  }, [hotDeals]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -27,6 +36,13 @@ export default function DiscountProducts() {
 
   return (
     <section className="bg-white py-5 px-4 lg:px-0">
+
+      <BigDiscountBanner
+        discountAmount={maxDiscount}
+        collectionName="LIMITED FLASH SALE"
+        title="Exclusive Summer Fashion Style"
+      />
+
       <div>
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -63,11 +79,13 @@ export default function DiscountProducts() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {hotDeals.map((singleProduct) => (
-              <motion.div key={singleProduct.id} variants={itemVariants}>
-                <DiscountProductCard product={singleProduct} />
-              </motion.div>
-            ))}
+            {
+              hotDeals.map((singleProduct) => (
+                <motion.div key={singleProduct.id} variants={itemVariants}>
+                  <DiscountProductCard product={singleProduct} />
+                </motion.div>
+              ))
+            }
           </motion.div>
         ) : (
           <motion.div
